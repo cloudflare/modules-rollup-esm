@@ -1,4 +1,4 @@
-# 👷 Durable Objects Counter template
+# 👷 Modules Wrangler template
 
 A template for kick starting a Cloudflare Workers project using:
 
