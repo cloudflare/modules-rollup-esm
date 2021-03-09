@@ -1,6 +1,6 @@
 # 👷 Modules Wrangler template
 
-## NOTE: You must be using the Modules RC to use this template. Check the [wrangler releases page](https://github.com/cloudflare/wrangler/releases) for more information
+## NOTE: You must be using the Custom Builds RC to use this template. Check the [wrangler releases page](https://github.com/cloudflare/wrangler/releases) for more information
 
 A template for kick starting a Cloudflare Workers project using:
 
