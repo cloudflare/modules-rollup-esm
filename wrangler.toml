@@ -8,6 +8,5 @@ zone_id = ""
 
 [build]
 command = "npm install && npm run build"
-upload_format = "modules"
-# Make sure we don't upload the sourcemap as part of the bundle
-upload_exclude = ["*.map"]
+upload.format = "modules"
+upload.main = "./index.mjs"
