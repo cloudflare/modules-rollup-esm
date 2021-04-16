@@ -8,6 +8,5 @@ zone_id = ""
 
 [build]
 command = "npm install && npm run build"
-# The "modules" upload format is required for all projects that export a Durable Objects class
 upload.format = "modules"
 upload.main = "./index.mjs"
