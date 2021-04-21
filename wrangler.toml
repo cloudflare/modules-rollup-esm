@@ -8,5 +8,6 @@ zone_id = ""
 
 [build]
 command = "npm install && npm run build"
-upload.format = "modules"
-upload.main = "./index.mjs"
+[build.upload]
+format = "modules"
+main = "./index.mjs"
