@@ -14,7 +14,7 @@ export default {
 
   // slug.txt will be uploaded as a text module, not as part of the rollup bundle.
   // so we must declare it as an external dependency (to be resolved at runtime).
-  external: ['slug.txt'],
+  external: ['./slug.txt'],
   plugins: [
     commonjs(),
     nodeResolve({ browser: true }),

@@ -11,3 +11,6 @@ command = "npm install && npm run build"
 [build.upload]
 format = "modules"
 main = "./index.mjs"
+[[build.upload.rules]]
+type = "Text"
+globs = ["**/*.txt"]
