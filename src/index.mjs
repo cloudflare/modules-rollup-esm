@@ -1,4 +1,5 @@
 import slug from 'slug.txt'
+import path from 'path';
 
 export default {
   async fetch(request, env) {
@@ -11,5 +12,7 @@ export default {
 }
 
 async function handleRequest(request, env) {
+
+  console.log(path.basename(request.url))
   return new Response(slug)
 }

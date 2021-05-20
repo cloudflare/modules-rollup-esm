@@ -2,6 +2,7 @@ import { terser } from 'rollup-plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import copy from 'rollup-plugin-copy'
+import nodePolyfills from 'rollup-plugin-node-polyfills'
 
 export default {
   input: 'src/index.mjs',
@@ -17,6 +18,7 @@ export default {
   external: ['./slug.txt'],
   plugins: [
     commonjs(),
+    nodePolyfills(),
     nodeResolve({ browser: true }),
     terser(),
     copy({
