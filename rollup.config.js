@@ -9,7 +9,7 @@ export default {
     exports: 'named',
     format: 'es',
     file: 'dist/index.mjs',
-    sourcemap: true,
+    //sourcemap: true,
   },
 
   // slug.txt will be uploaded as a text module, not as part of the rollup bundle.
@@ -18,7 +18,7 @@ export default {
   plugins: [
     commonjs(),
     nodeResolve({ browser: true }),
-    terser(),
+   // terser(),
     copy({
       targets: [{ src: './src/slug.txt', dest: './dist/' }],
     }),
